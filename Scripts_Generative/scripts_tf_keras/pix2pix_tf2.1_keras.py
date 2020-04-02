@@ -262,8 +262,14 @@ def train():
         
         loss_dict = train_step(Xs, Xs_target)
         
+        print('|', end='')
+
         if (i + 1) % 10 == 0:
-            print('iter : {} , G_Loss : {:.4f} (fake : {:.4f} , L1 : {:.4f}) , D_Loss : {:.4f} (fake : {:.4f} , real : {:.4f})'.format(
+            print(i + 1, end='')
+        
+        if (i + 1) % 50 == 0:
+            print('\r' + ' ' * 100, end='')
+            print('\riter : {} , G_Loss : {:.4f} (fake : {:.4f} , L1 : {:.4f}) , D_Loss : {:.4f} (fake : {:.4f} , real : {:.4f})'.format(
                 i + 1, loss_dict['G_loss'], loss_dict['G_loss_fake'], loss_dict['G_loss_L1'], loss_dict['D_loss'], loss_dict['D_loss_fake'], loss_dict['D_loss_real']))
 
     G.save_weights(model_path_G)
