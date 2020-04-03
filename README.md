@@ -1,22 +1,17 @@
 # ディープラーニング∞本ノックぅぅ!!
 
-Update now!
+DeepLearningの実装Tips (WiP)
 
-何問になるか分からないので∞本になってます。多分これからいろんな技術が出るからどんどん更新する予定でっす。
-これはイモリと一緒にディープラーニングの基礎からDLのライブラリの扱い、どういうDLの論文があったかを実装しながら学んでいくための問題集です。本とか論文読んだだけじゃ机上の空想でしかないので、ネットワークの作成や学習率などのハイパーパラメータの設定を自分の手を動かしながら勉強するための問題集です。
+**ノック作るのが大変になってきたのでTips集に変更しました**
 
-**問題集として使ってもテンプレやチートシートとして使っても使い方は自由です！！！！**
-
-僕が研究室で３年修行してディープラーニングで必要そうだなーと思ったものを集めてます。
-
-例えば研究してて提案手法を急にKerasでやればとか簡単に言うけどそんなすぐにできるかいってよくあると思うんだけどそういうのにもすぐ対応できる力を身につけるためのものだとも思ってます。
-
-- **内容はいろいろな文献を調べて載っけてるので正しくないものもあるかもしれないので注意して下さい。もし間違ってたらプルリク下さい笑**
 - 【注意】このページを利用して、または関して生じた事に関しては、**私は一切責任を負いません。** すべて **自己責任** でお願い致します。
-- コードの書き方は私の趣向がけっこう出てるので、この書き方キモってなったら自分の書き方でやっていってください。答えはあくまで参考です。FWによってチョクチョク実装に小さな違いがあるのでそこはご愛嬌
 - なんとなく本とか買わずにDLを勉強したいーーーって人向けだと思う
 
 もしこれがみなさんのお役に立ったらGithub Sponsorになってください！
+
+~~何問になるか分からないので∞本になってます。多分これからいろんな技術が出るからどんどん更新する予定でっす。これはイモリと一緒にディープラーニングの基礎からDLのライブラリの扱い、どういうDLの論文があったかを実装しながら学んでいくための問題集です。本とか論文読んだだけじゃ机上の空想でしかないので、ネットワークの作成や学習率などのハイパーパラメータの設定を自分の手を動かしながら勉強するための問題集です。~~
+
+~~**問題集として使ってもテンプレやチートシートとして使っても使い方は自由です！！！！**~~
 
 ## Related
 
@@ -37,6 +32,7 @@ Twitterで更新を発信してますぅ
 
 https://twitter.com/curry_frog
 
+- 2020.4.3 Thu [tf.keras] pix2pixを追加
 - 2020.3.27 Thu [tf.keras] Style Transferを追加
 - 2020.2.25 Tue [Pytorch] WGAN-GPを修正
 - 2020.1.1 [Pytorch] EfficientNetB1~B7を追加
@@ -83,31 +79,24 @@ https://twitter.com/curry_frog
 
 ## 環境設定
 
-Python3でやって下さい。(解答はPython3)
-
 ### 1. Minicondaのインストール
 
-https://conda.io/miniconda.html のサイトからMinicondaをインストールします。これはWindowでもMacOSでも可能です。Minicondaがインストールできたら、端末(Windowでは端末、MacOSではターミナル)を開き、以下コマンドで仮想環境を作成します。**もしくはGoogle colabolatoryを使って見て下さい。GPUが使えます。**
+https://conda.io/miniconda.html からMinicondaをインストールする。（Window、MacOS）Minicondaインストール後、端末(Windowでは端末、MacOSではターミナル)を開き、以下コマンドで仮想環境を作成する。**またはGoogle colabolatoryならGPUが使用化。**
 
 ```bash
-$ conda create python=3.6 -n dl_env
+$ conda create python=3.7 -n dl_env
 ```
 
-作成できたら、以下コマンドで仮想環境を動作します。
+以下コマンドで仮想環境を開始。
 
 ```bash
 $ source activate dl_env
-```
-
-するとこうなります。
-
-```bash
 (dlmugenknock) :~/work_space/DeepLearningMugenKnock/ :$ 
 ```
 
-### 2. gitのインストール
+### 2. レポジトリのインストール
 
-gitをインストールします。そして、端末を開いて、以下のコマンドを実行します。このコマンドでこのディレクトリを丸ごと自分のパソコンにコピーできます。
+以下のコマンドでこのディレクトリを丸ごと自分のパソコンにコピーする。
 
 ```bash
 $ git clone https://github.com/yoyoyo-yo/DeepLearningMugenKnock.git
@@ -115,8 +104,7 @@ $ git clone https://github.com/yoyoyo-yo/DeepLearningMugenKnock.git
 
 ### 3. パッケージのインストール
 
-以下のコマンドで必要なパッケージをインストールします。これで準備は完了です！！
-
+最後に以下のコマンドで必要なパッケージをインストールする。
 
 ```bash
 $ pip install -r requirements.txt
@@ -135,53 +123,12 @@ $ pip install -r requirements.txt
 | how to | [&check;](Scripts_HowTo/README_pytorch.md) | [&check;](Scripts_HowTo/README_tensorflow.md)  |  [&check;](Scripts_HowTo/README_keras.md) | [&check;](Scripts_HowTo/README_chainer.md) | [&check;install(Docker)](Scripts_HowTo/README_caffe_install_docker.md) <br>  [&check;install(Native)](Scripts_HowTo/README_caffe_install_native.md) |
 | sample | [&check;](Scripts_HowTo/main_pytorch.py)  | [&check;(slim)](Scripts_HowTo/main_tensorflow_slim.py) <br> [&check;(layers)](Scripts_HowTo/main_tensorflow_layers.py) <br> [&check;(raw)](Scripts_HowTo/main_tensorflow_raw.py) | [&check;](Scripts_HowTo/main_keras.py)  | [&check;](Scripts_HowTo/main_chainer.py)  |
 
-## 問題
 
-詳細な問題内容は各ディレクトリのREADMEにあります。（ディレクトリで下にスクロールすればあります）
+## Tips
 
-## 自分でフルスクラッチから実装する(理論)
+詳細は各ディレクトリのREADME
 
-| 番号 | [理論1](Scripts_theory) | 答え  | 番号 | [理論2](Scripts_theory2) | 答え |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | [パーセプトロン AND](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-and) | [&check;](Scripts_theory/scripts/perceptron_1.py) | 13 | [画像認識](Scripts_theory2/#%E7%94%BB%E5%83%8F%E8%AA%8D%E8%AD%98) | [&check;](Scripts_theory2/scripts/neuralnet_classification.py)
-| 2 | [パーセプトロン 学習](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-%E5%AD%A6%E7%BF%92) | [&check;](Scripts_theory/scripts/perceptron_2.py)| 14 | [誤差関数](Scripts_theory2/#%E8%AA%A4%E5%B7%AE%E9%96%A2%E6%95%B0) | [&check;](Scripts_theory2/scripts/neuralnet_loss.py)
-| 3 | [パーセプトロン 収束性](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-%E5%8F%8E%E6%9D%9F%E6%80%A7) | [&check;](Scripts_theory/scripts/perceptron_3.py) |  | [Sigmoid Cross Entropy](Scripts_theory2/#sigmoid-cross-entropy) | [&check;](Scripts_theory2/scripts/neuralnet_sce.py)
-| 4 | [パーセプトロン Sigmoid](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-sigmoid) | [&check;](Scripts_theory/scripts/perceptron_sigmoid.py) |  | [Convolutional Layer](Scripts_theory2/#convolutional-layer) | [&check;](Scripts_theory2/scripts/conv_kernel.py)
-| 5 | [パーセプトロン バイアス](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-bias) | [&check;](Scripts_theory/scripts/perceptron_sigmoid_bias.py) |  | [Padding](Scripts_theory2/#padding) | [&check;](Scripts_theory2/scripts/conv_pad.py)
-| 6 | [パーセプトロン OR](Scripts_theory#q%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-or) | [&check;](Scripts_theory/scripts/perceptron_or.py) |  | [Stride](Scripts_theory2/#stride) | [&check;](Scripts_theory2/scripts/conv_stride.py)
-| 7 | [パーセプトロン NOT](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-not) | [&check;](Scripts_theory/scripts/perceptron_not.py) |  | [Max-pooling layer](Scripts_theory2#max-pooling-layer) | [&check;](Scripts_theory2/scripts/maxpool.py)
-| 8 | [パーセプトロン XOR](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-xor%E3%82%B2%E3%83%BC%E3%83%88) | [&check;](Scripts_theory/scripts/perceptron_xor.py ) |  | [Average-pooling layer](Scripts_theory2#average-pooling-layer) | [&check;](Scripts_theory2/scripts/avepool.py)
-| 9 | [多層パーセプトロン FeedForward](Scripts_theory#q-%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-feedforward) | [&check;](Scripts_theory/scripts/multi_perceptron_1.py)
-| 10 | [多層パーセプトロン 学習](Scripts_theory#q-%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-%E5%AD%A6%E7%BF%92) | [&check;](Scripts_theory/scripts/multi_perceptron_2.py)
-| 11 | [更に多層パーセプトロン](Scripts_theory#q-%E6%9B%B4%E3%81%AB%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3) | [&check;](Scripts_theory/scripts/multi_perceptron_3.py)
-| 12 | [ニューラルネットのクラス化](Scripts_theory#q-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%B9%E5%8C%96) | [&check;](Scripts_theory/scripts/multi_perceptron_class.py)
-
-
-
-## [データセット用意](Scripts_Dataset)
-
-### DataAugmentation
-
-|番号|問題| 答え | | 番号|問題|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | [自分で用意したデータセットの読み込み](Scripts_Dataset#q2-1-%E5%AD%A6%E7%BF%92%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF) | [&check;](Scripts_Dataset/scripts/answer_data_load.py)
-| 2 | [ミニバッチの作成](Scripts_Dataset#q2-2-%E3%83%9F%E3%83%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90) | [&check;](Scripts_Dataset/scripts/answer_minibatch.py)
-| 3 | [イテレーション・エポック](Scripts_Dataset#q2-3-%E3%82%A4%E3%83%86%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF) | [&check;](Scripts_Dataset/scripts/answer_epoch.py)
-| 4 | [データ拡張・水平反転](Scripts_Dataset#q4-%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5%E5%B7%A6%E5%8F%B3%E5%8F%8D%E8%BB%A2) | [&check;](Scripts_Dataset/scripts/answer_hf.py)
-| 5 | [データ拡張・上下反転](Scripts_Dataset#q5-%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5%E4%B8%8A%E4%B8%8B%E5%8F%8D%E8%BB%A2) | [&check;](Scripts_Dataset/scripts/answer_vf.py)
-| 6 | [データ拡張・回転](Scripts_Dataset#q6-%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5%E5%9B%9E%E8%BB%A2) | [&check;](Scripts_Dataset/scripts/answer_rotation.py)
-
-### OpenSource
-|問題| 答え |
-|:---:|:---:|
-| [MNIST](Scripts_Dataset#mnist) | [&check;](Scripts_Dataset/scripts/load_mnist.py)
-| [CIFAR-10](Scripts_Dataset#cifar-10) | [&check;](Scripts_Dataset/scripts/load_cifar10.py)
-| [Fashion MNIST](Scripts_Dataset#fashion-mnist) | [&check;](Scripts_Dataset/scripts/load_fashion_mnist.py)
-
-
-## 実装編
-
-ここから基本的に、「python scripts_XXX/YYY.py --train --test」と打てば動きます。
+ここから基本的に、「python scripts_XXX/YYY.py --train --test」で動く。
 
 ### [Model](Scripts_Model)
 
@@ -195,7 +142,7 @@ $ pip install -r requirements.txt
 | [Network in network](Scripts_Model#q-network-in-network) | [&check; pytorch](Scripts_Model/scripts_pytorch/nin_pytorch.py) [&check; tf.layers](Scripts_Model/scripts_tf_layers/nin_tensorflow_layers.py) [&check; keras](Scripts_Model/scripts_keras/nin_keras.py) [&check; chainer](Scripts_Model/scripts_chainer/nin_chainer.py) | 2013 |
 | [VGG16](Scripts_Model#q-vgg16) | [&check; pytorch](Scripts_Model/scripts_pytorch/vgg16_pytorch.py) [&check; tf.layers](Scripts_Model/scripts_tf_layers/vgg16_tensorflow_layers.py) [&check; keras](Scripts_Model/scripts_keras/vgg16_keras.py) [&check; chainer](Scripts_Model/scripts_chainer/vgg16_chainer.py) | 2014 |
 | [VGG19](Scripts_Model#q-vgg19) | [&check; pytorch](Scripts_Model/scripts_pytorch/vgg19_pytorch.py) [&check; tf.layers](Scripts_Model/scripts_tf_layers/vgg19_tensorflow_layers.py) [&check; keras](Scripts_Model/scripts_keras/vgg19_keras.py) [&check; chainer](Scripts_Model/scripts_chainer/vgg19_chainer.py) | 2014 |
-| [GoogLeNet-v1(Inception)](Scripts_Model#q-googlenet-v1) | [&check; pytorch](Scripts_Model/scripts_pytorch/googletnetv1_pytorch.py)  [&check; tf.slim](Scripts_Model/scripts_tf_slim/googlenetv1_tensorflow_slim.py) [&check; keras](Scripts_Model/scripts_keras/googlenetv1_keras.py) [&check; chainer](Scripts_Model/scripts_chainer/googlenetv1_chainer.py) | 2014 |
+| [GoogLeNet-v1 (Inception)](Scripts_Model#q-googlenet-v1) | [&check; pytorch](Scripts_Model/scripts_pytorch/googletnetv1_pytorch.py)  [&check; tf.slim](Scripts_Model/scripts_tf_slim/googlenetv1_tensorflow_slim.py) [&check; keras](Scripts_Model/scripts_keras/googlenetv1_keras.py) [&check; chainer](Scripts_Model/scripts_chainer/googlenetv1_chainer.py) | 2014 |
 | [Batch Normalization](Scripts_Model#q-vgg19) | [&check; pytorch](Scripts_Model/scripts_pytorch/bn_pytorch.py) [&check; tf.layers](Scripts_Model/scripts_tf_layers/bn_tensorflow_layers.py)  [&check; keras](Scripts_Model/scripts_keras/bn_keras.py) [&check; chainer](Scripts_Model/scripts_chainer/bn_chainer.py) | 2015 |
 | [ResNet-18](Scripts_Model#q-resnet) | [&check; pytorch](Scripts_Model/scripts_pytorch/res18_pytorch.py) [&check; tf.layers](Scripts_Model/scripts_tf_layers/res18_tensorflow_layers.py) [&check; keras](Scripts_Model/scripts_keras/res18_keras.py) | 2015 |
 | [ResNet-34](Scripts_Model#q-resnet) | [&check; pytorch](Scripts_Model/scripts_pytorch/res34_pytorch.py) [&check; tf.layers](Scripts_Model/scripts_tf_layers/res34_tensorflow_layers.py)  [&check; keras](Scripts_Model/scripts_keras/res34_keras.py) |  2015 |
@@ -221,10 +168,10 @@ $ pip install -r requirements.txt
 | [EfficientNetB7](Scripts_Model#efficientnet) | [&check; pytorch](Scripts_Model/scripts_pytorch/EfficientNetB7_pytorch.py) | 2019 |
 
 ### [Interpretation](Scripts_Interpret)
+
 | 問題 |  Implementation | Published Year | 
 |:---:|:---:|:---:|
 | [Grad-CAM](Scripts_Interpret#grad-cam) | [&check; pytorch](Scripts_Interpret/scripts_interpret/GradCam_pytorch.py) | 2016 |
-
 
 
 ### [Segmentation](Scripts_Segmentation)
@@ -243,7 +190,7 @@ $ pip install -r requirements.txt
 | [SegNet](Scripts_Segmentation#segnet)|  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/SegNet_pytorch.py) | 2015 |
 
 
-### [Generative Model](Scripts_Generative)
+### [VAE](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
 |:---:|:---:|:---:|
 | [AutoEncoder](Scripts_Generative#q-auto-encoder) Cifar10 |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/ae_cifar10_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/ae_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/ae_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/ae_cifar10_chainer.py) |
@@ -254,19 +201,27 @@ $ pip install -r requirements.txt
 | [VAE 潜在変数の可視化](Scripts_Generative#vae-潜在変数の可視化) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_latest_show_mnist_pytorch.py) |
 | [VAE 潜在変数の操作による画像の生成1](Scripts_Generative#vae-潜在変数の操作による画像の生成) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_latent_change_mnist_pytorch.py) |
 | [VAE 潜在変数の操作による画像の生成2](Scripts_Generative#vae-潜在変数の操作による画像の生成) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_latent_change2_mnist_pytorch.py) |
+
+### [GAN](Scripts_Generative)
+| 問題 |  Implementation | Published Year |
+|:---:|:---:|:---:|
 | [GAN](Scripts_Generative#q-gan) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/gan_cifar10_pytorch.py) [&check; tf.slim (WiP)](Scripts_Generative/scripts_tf_slim/gan_cifar10_tensorflow_slim.py)  [&check; keras](Scripts_Generative/scripts_keras/gan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/gan_cifar10_chainer.py) |
 | [GAN](Scripts_Generative#q-gan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/gan_pytorch.py) | | [&check; tf.slim (WiP)](Scripts_Generative/scripts_tf_slim/gan_tensorflow_slim.py) | | [&check; keras](Scripts_Generative/scripts_keras/gan_keras.py) | [&check; chainer](Scripts_Generative/scripts_chainer/gan_chainer.py) |
 | [DCGAN](Scripts_Generative#dcgan) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/dcgan_cifar10_pytorch.py)   [&check; tf.keras](Scripts_Generative/scripts_tf_keras/DCGAN_cifar10_tf2.1_keras.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/dcgan_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/dcgan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/dcgan_cifar10_chainer.py) |
 | [DCGAN](Scripts_Generative#dcgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/dcgan_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/dcgan_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/dcgan_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/dcgan_chainer.py)
 | [Conditional GAN](Scripts_Generative#q-conditional-gan) MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/cgan_mnist_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/cgan_mnist_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/cgan_mnist_keras.py)  [&check; chainer](Scripts_Generative/scripts_chainer/cgan_mnist_chainer.py) | 2014 |
 | [Conditional GAN](Scripts_Generative#conditional-gan) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/cgan_cifar10_pytorch.py) [&check;tf.slim](Scripts_Generative/scripts_tf_slim/cgan_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/cgan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/cgan_cifar10_chainer.py) |
-| [pix2pix](Scripts_Generative#pix2pix) | [&check; pytorch](Scripts_Generative/scripts_pytorch/pix2pix_segment_pytorch.py) |2016|
+| [pix2pix](Scripts_Generative#pix2pix) | [&check; pytorch](Scripts_Generative/scripts_pytorch/pix2pix_segment_pytorch.py) [&check; tf.keras](Scripts_Generative/scripts_tf_keras/pix2pix_tf2.1_keras.py) |2016|
 | [pix2pix-GP](Scripts_Generative#pix2pix-GP)| [&check; pytorch](Scripts_Generative/scripts_pytorch/pix2pixGP_pytorch.py) | - |
 | [WGAN](Scripts_Generative#wgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN_cifar10_pytorch.py)| 2017 |
 | [WGAN-GP](Scripts_Generative#wgan-gp) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_cifar10_pytorch.py) | 2017 |
 | [WGAN-GP](Scripts_Generative#wgan-gp) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_pytorch.py)  | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_mnist_pytorch.py) | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) CIFAR10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_cifar10_pytorch.py) |2017 |
+
+### [Generative Model](Scripts_Generative)
+| 問題 |  Implementation | Published Year |
+|:---:|:---:|:---:|
 | [Style Transfer]() |  [&check; tf.keras](Scripts_Generative/scripts_tf_keras/StyleTransfer_tf2.1_keras.py) |
 
 
@@ -282,6 +237,45 @@ $ pip install -r requirements.txt
 | [Transformer (Hard Attention)](Scripts_NLP#transformer-hard-attention) | [&check; pytorch](Scripts_NLP/scripts_pytorch/Transformer_HardAttention_pytorch.py) |2014?|
 | [HRED](Scripts_NLP#hred) | [&check; pytorch](Scripts_NLP/scripts_pytorch/HRED_pytorch.py) |2015|
 | [Word2Vec (Skip-gram)](Scripts_NLP#word2vec-skip-gram) | [&check; pytorch](Scripts_NLP/scripts_pytorch/word2vec_pytorch.py) |
+
+## Theory
+
+|Num | [Theory 1](Scripts_theory) | Answer | Num | [Theory 2](Scripts_theory2) | Answer |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | [パーセプトロン AND](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-and) | [&check;](Scripts_theory/scripts/perceptron_1.py) | 13 | [画像認識](Scripts_theory2/#%E7%94%BB%E5%83%8F%E8%AA%8D%E8%AD%98) | [&check;](Scripts_theory2/scripts/neuralnet_classification.py)
+| 2 | [パーセプトロン 学習](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-%E5%AD%A6%E7%BF%92) | [&check;](Scripts_theory/scripts/perceptron_2.py)| 14 | [誤差関数](Scripts_theory2/#%E8%AA%A4%E5%B7%AE%E9%96%A2%E6%95%B0) | [&check;](Scripts_theory2/scripts/neuralnet_loss.py)
+| 3 | [パーセプトロン 収束性](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-%E5%8F%8E%E6%9D%9F%E6%80%A7) | [&check;](Scripts_theory/scripts/perceptron_3.py) |  | [Sigmoid Cross Entropy](Scripts_theory2/#sigmoid-cross-entropy) | [&check;](Scripts_theory2/scripts/neuralnet_sce.py)
+| 4 | [パーセプトロン Sigmoid](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-sigmoid) | [&check;](Scripts_theory/scripts/perceptron_sigmoid.py) |  | [Convolutional Layer](Scripts_theory2/#convolutional-layer) | [&check;](Scripts_theory2/scripts/conv_kernel.py)
+| 5 | [パーセプトロン バイアス](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-bias) | [&check;](Scripts_theory/scripts/perceptron_sigmoid_bias.py) |  | [Padding](Scripts_theory2/#padding) | [&check;](Scripts_theory2/scripts/conv_pad.py)
+| 6 | [パーセプトロン OR](Scripts_theory#q%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-or) | [&check;](Scripts_theory/scripts/perceptron_or.py) |  | [Stride](Scripts_theory2/#stride) | [&check;](Scripts_theory2/scripts/conv_stride.py)
+| 7 | [パーセプトロン NOT](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-not) | [&check;](Scripts_theory/scripts/perceptron_not.py) |  | [Max-pooling layer](Scripts_theory2#max-pooling-layer) | [&check;](Scripts_theory2/scripts/maxpool.py)
+| 8 | [パーセプトロン XOR](Scripts_theory#q-%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-xor%E3%82%B2%E3%83%BC%E3%83%88) | [&check;](Scripts_theory/scripts/perceptron_xor.py ) |  | [Average-pooling layer](Scripts_theory2#average-pooling-layer) | [&check;](Scripts_theory2/scripts/avepool.py)
+| 9 | [多層パーセプトロン FeedForward](Scripts_theory#q-%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-feedforward) | [&check;](Scripts_theory/scripts/multi_perceptron_1.py)
+| 10 | [多層パーセプトロン 学習](Scripts_theory#q-%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-%E5%AD%A6%E7%BF%92) | [&check;](Scripts_theory/scripts/multi_perceptron_2.py)
+| 11 | [更に多層パーセプトロン](Scripts_theory#q-%E6%9B%B4%E3%81%AB%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3) | [&check;](Scripts_theory/scripts/multi_perceptron_3.py)
+| 12 | [ニューラルネットのクラス化](Scripts_theory#q-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%B9%E5%8C%96) | [&check;](Scripts_theory/scripts/multi_perceptron_class.py)
+
+
+
+## [Dataset](Scripts_Dataset)
+
+### DataAugmentation
+
+|番号|問題| 答え | | 番号|問題|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | [自分で用意したデータセットの読み込み](Scripts_Dataset#q2-1-%E5%AD%A6%E7%BF%92%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF) | [&check;](Scripts_Dataset/scripts/answer_data_load.py)
+| 2 | [ミニバッチの作成](Scripts_Dataset#q2-2-%E3%83%9F%E3%83%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90) | [&check;](Scripts_Dataset/scripts/answer_minibatch.py)
+| 3 | [イテレーション・エポック](Scripts_Dataset#q2-3-%E3%82%A4%E3%83%86%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF) | [&check;](Scripts_Dataset/scripts/answer_epoch.py)
+| 4 | [データ拡張・水平反転](Scripts_Dataset#q4-%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5%E5%B7%A6%E5%8F%B3%E5%8F%8D%E8%BB%A2) | [&check;](Scripts_Dataset/scripts/answer_hf.py)
+| 5 | [データ拡張・上下反転](Scripts_Dataset#q5-%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5%E4%B8%8A%E4%B8%8B%E5%8F%8D%E8%BB%A2) | [&check;](Scripts_Dataset/scripts/answer_vf.py)
+| 6 | [データ拡張・回転](Scripts_Dataset#q6-%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5%E5%9B%9E%E8%BB%A2) | [&check;](Scripts_Dataset/scripts/answer_rotation.py)
+
+### OpenSource
+|問題| 答え |
+|:---:|:---:|
+| [MNIST](Scripts_Dataset#mnist) | [&check;](Scripts_Dataset/scripts/load_mnist.py)
+| [CIFAR-10](Scripts_Dataset#cifar-10) | [&check;](Scripts_Dataset/scripts/load_cifar10.py)
+| [Fashion MNIST](Scripts_Dataset#fashion-mnist) | [&check;](Scripts_Dataset/scripts/load_fashion_mnist.py)
 
 
 ## Citation
