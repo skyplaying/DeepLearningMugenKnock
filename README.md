@@ -107,7 +107,14 @@ $ git clone https://github.com/yoyoyo-yo/DeepLearningMugenKnock.git
 最後に以下のコマンドで必要なパッケージをインストールする。
 
 ```bash
-$ pip install -r requirements.txt
+# pytorch
+$ pip install matplotlib opencv-python easydict torch torchvision
+# tensorflow-2.1
+$ pip install matplotlib opencv-python easydict tensorflow==2.1
+# keras
+$ pip install matplotlib opencv-python easydict tensorflow keras
+# chainer
+$ pip install matplotlib opencv-python easydict chainer
 ```
 
 ## フレームワーク早見表
