@@ -32,7 +32,7 @@ Twitterで更新を発信してますぅ
 
 https://twitter.com/curry_frog
 
-- 2020.4.3 Thu [tf.keras] pix2pixを追加
+- 2020.4.3 Fri [tf.keras] pix2pixを追加
 - 2020.3.27 Thu [tf.keras] Style Transferを追加
 - 2020.2.25 Tue [Pytorch] WGAN-GPを修正
 - 2020.1.1 [Pytorch] EfficientNetB1~B7を追加
