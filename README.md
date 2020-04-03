@@ -84,19 +84,17 @@ https://twitter.com/curry_frog
 https://conda.io/miniconda.html からMinicondaをインストールする。（Window、MacOS）Minicondaインストール後、端末(Windowでは端末、MacOSではターミナル)を開き、以下コマンドで仮想環境を作成する。**またはGoogle colabolatoryならGPUが使用化。**
 
 ```bash
+# 1. Create 
+## 仮想環境を作成
 $ conda create python=3.7 -n dl_env
-```
-
-以下コマンドで仮想環境を開始。
-
-```bash
+# 仮想環境を開始
 $ source activate dl_env
-(dlmugenknock) :~/work_space/DeepLearningMugenKnock/ :$ 
+(dl_env) :~/work_space/DeepLearningMugenKnock/ :$ 
 ```
 
 ### 2. レポジトリのインストール
 
-以下のコマンドでこのディレクトリを丸ごと自分のパソコンにコピーする。
+下記コマンドでこのレポジトリを自分のパソコンにインストール。
 
 ```bash
 $ git clone https://github.com/yoyoyo-yo/DeepLearningMugenKnock.git
@@ -104,7 +102,7 @@ $ git clone https://github.com/yoyoyo-yo/DeepLearningMugenKnock.git
 
 ### 3. パッケージのインストール
 
-最後に以下のコマンドで必要なパッケージをインストールする。
+最後に下記コマンドで必要なパッケージをインストールする。
 
 ```bash
 # pytorch
@@ -116,19 +114,6 @@ $ pip install matplotlib opencv-python easydict tensorflow keras
 # chainer
 $ pip install matplotlib opencv-python easydict chainer
 ```
-
-## フレームワーク早見表
-
-- [**CNN・フレームワークの使い方編**](Scripts_HowTo)
-- [**共通事項**](Scripts_HowTo)
-
-| | PyTorch | Tensorflow | Keras | Chainer | Caffe |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 入力 | [mb,c,h,w] | [mb, h, w, c] | [mb, h, w, c] | [mc, c, h, w] | [mb, c, h, w] |
-| 教師ラベル | index [mb] | onehot [mb, cls] | onehot [mb, cls] | index [mb] | index [mb] |
-| 速度 | まあまあ早い | 早い | 早い | 普通 | まあまあ早い？ |
-| how to | [&check;](Scripts_HowTo/README_pytorch.md) | [&check;](Scripts_HowTo/README_tensorflow.md)  |  [&check;](Scripts_HowTo/README_keras.md) | [&check;](Scripts_HowTo/README_chainer.md) | [&check;install(Docker)](Scripts_HowTo/README_caffe_install_docker.md) <br>  [&check;install(Native)](Scripts_HowTo/README_caffe_install_native.md) |
-| sample | [&check;](Scripts_HowTo/main_pytorch.py)  | [&check;(slim)](Scripts_HowTo/main_tensorflow_slim.py) <br> [&check;(layers)](Scripts_HowTo/main_tensorflow_layers.py) <br> [&check;(raw)](Scripts_HowTo/main_tensorflow_raw.py) | [&check;](Scripts_HowTo/main_keras.py)  | [&check;](Scripts_HowTo/main_chainer.py)  |
 
 
 ## Tips
@@ -283,6 +268,19 @@ $ pip install matplotlib opencv-python easydict chainer
 | [MNIST](Scripts_Dataset#mnist) | [&check;](Scripts_Dataset/scripts/load_mnist.py)
 | [CIFAR-10](Scripts_Dataset#cifar-10) | [&check;](Scripts_Dataset/scripts/load_cifar10.py)
 | [Fashion MNIST](Scripts_Dataset#fashion-mnist) | [&check;](Scripts_Dataset/scripts/load_fashion_mnist.py)
+
+## フレームワーク早見表
+
+- [**CNN・フレームワークの使い方編**](Scripts_HowTo)
+- [**共通事項**](Scripts_HowTo)
+
+| | PyTorch | Tensorflow | Keras | Chainer | Caffe |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 入力 | [mb,c,h,w] | [mb, h, w, c] | [mb, h, w, c] | [mc, c, h, w] | [mb, c, h, w] |
+| 教師ラベル | index [mb] | onehot [mb, cls] | onehot [mb, cls] | index [mb] | index [mb] |
+| 速度 | まあまあ早い | 早い | 早い | 普通 | まあまあ早い？ |
+| how to | [&check;](Scripts_HowTo/README_pytorch.md) | [&check;](Scripts_HowTo/README_tensorflow.md)  |  [&check;](Scripts_HowTo/README_keras.md) | [&check;](Scripts_HowTo/README_chainer.md) | [&check;install(Docker)](Scripts_HowTo/README_caffe_install_docker.md) <br>  [&check;install(Native)](Scripts_HowTo/README_caffe_install_native.md) |
+| sample | [&check;](Scripts_HowTo/main_pytorch.py)  | [&check;(slim)](Scripts_HowTo/main_tensorflow_slim.py) <br> [&check;(layers)](Scripts_HowTo/main_tensorflow_layers.py) <br> [&check;(raw)](Scripts_HowTo/main_tensorflow_raw.py) | [&check;](Scripts_HowTo/main_keras.py)  | [&check;](Scripts_HowTo/main_chainer.py)  |
 
 
 ## Citation
