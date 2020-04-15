@@ -195,19 +195,20 @@ $ pip install matplotlib opencv-python easydict chainer
 ### [GAN](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
 |:---:|:---:|:---:|
-| [GAN](Scripts_Generative#q-gan) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/gan_cifar10_pytorch.py) [&check; tf.slim (WiP)](Scripts_Generative/scripts_tf_slim/gan_cifar10_tensorflow_slim.py)  [&check; keras](Scripts_Generative/scripts_keras/gan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/gan_cifar10_chainer.py) |
+| [GAN](Scripts_Generative#q-gan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/gan_cifar10_pytorch.py) [&check; tf.slim (WiP)](Scripts_Generative/scripts_tf_slim/gan_cifar10_tensorflow_slim.py)  [&check; keras](Scripts_Generative/scripts_keras/gan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/gan_cifar10_chainer.py) |
 | [GAN](Scripts_Generative#q-gan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/gan_pytorch.py) | | [&check; tf.slim (WiP)](Scripts_Generative/scripts_tf_slim/gan_tensorflow_slim.py) | | [&check; keras](Scripts_Generative/scripts_keras/gan_keras.py) | [&check; chainer](Scripts_Generative/scripts_chainer/gan_chainer.py) |
-| [DCGAN](Scripts_Generative#dcgan) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/dcgan_cifar10_pytorch.py)   [&check; tf.keras](Scripts_Generative/scripts_tf_keras/DCGAN_cifar10_tf2.1_keras.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/dcgan_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/dcgan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/dcgan_cifar10_chainer.py) |
-| [DCGAN](Scripts_Generative#dcgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/dcgan_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/dcgan_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/dcgan_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/dcgan_chainer.py)
+| [DCGAN](Scripts_Generative#dcgan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/DCGAN_cifar10_pytorch.ipynb)   [&check; tf.keras](Scripts_Generative/scripts_tf_keras/DCGAN_cifar10_tf2.1_keras.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/dcgan_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/dcgan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/dcgan_cifar10_chainer.py) |
+| [DCGAN](Scripts_Generative#dcgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/DCGAN_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/dcgan_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/dcgan_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/dcgan_chainer.py)
 | [Conditional GAN](Scripts_Generative#q-conditional-gan) MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/cgan_mnist_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/cgan_mnist_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/cgan_mnist_keras.py)  [&check; chainer](Scripts_Generative/scripts_chainer/cgan_mnist_chainer.py) | 2014 |
-| [Conditional GAN](Scripts_Generative#conditional-gan) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/cgan_cifar10_pytorch.py) [&check;tf.slim](Scripts_Generative/scripts_tf_slim/cgan_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/cgan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/cgan_cifar10_chainer.py) |
+| [Conditional GAN](Scripts_Generative#conditional-gan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/cgan_cifar10_pytorch.py) [&check;tf.slim](Scripts_Generative/scripts_tf_slim/cgan_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/cgan_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/cgan_cifar10_chainer.py) |
 | [pix2pix](Scripts_Generative#pix2pix) | [&check; pytorch](Scripts_Generative/scripts_pytorch/pix2pix_segment_pytorch.py) [&check; tf.keras](Scripts_Generative/scripts_tf_keras/pix2pix_tf2.1_keras.py) |2016|
 | [pix2pix-GP](Scripts_Generative#pix2pix-GP)| [&check; pytorch](Scripts_Generative/scripts_pytorch/pix2pixGP_pytorch.py) | - |
-| [WGAN](Scripts_Generative#wgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN_cifar10_pytorch.py)| 2017 |
-| [WGAN-GP](Scripts_Generative#wgan-gp) Cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_cifar10_pytorch.py) | 2017 |
+| [WGAN](Scripts_Generative#wgan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN_cifar10_pytorch.ipynb)| 2017 |
+| [WGAN](Scripts_Generative#wgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN_pytorch.ipynb)| 2017 |
+| [WGAN-GP](Scripts_Generative#wgan-gp) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_cifar10_pytorch.py) | 2017 |
 | [WGAN-GP](Scripts_Generative#wgan-gp) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_pytorch.py)  | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_mnist_pytorch.py) | 2017 |
-| [alpha-GAN](Scripts_Generative#alpha-gan) CIFAR10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_cifar10_pytorch.py) |2017 |
+| [alpha-GAN](Scripts_Generative#alpha-gan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_cifar10_pytorch.py) |2017 |
 
 ### [Generative Model](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
