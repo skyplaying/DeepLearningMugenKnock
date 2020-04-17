@@ -205,8 +205,8 @@ $ pip install matplotlib opencv-python easydict chainer
 | [pix2pix-GP](Scripts_Generative#pix2pix-GP)| [&check; pytorch](Scripts_Generative/scripts_pytorch/pix2pixGP_pytorch.py) | - |
 | [WGAN](Scripts_Generative#wgan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN_cifar10_pytorch.ipynb)| 2017 |
 | [WGAN](Scripts_Generative#wgan) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN_pytorch.ipynb)| 2017 |
-| [WGAN-GP](Scripts_Generative#wgan-gp) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_cifar10_pytorch.py) | 2017 |
-| [WGAN-GP](Scripts_Generative#wgan-gp) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGAN-GP_pytorch.py)  | 2017 |
+| [WGAN-GP](Scripts_Generative#wgan-gp) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGANGP_cifar10_pytorch.ipynb) | 2017 |
+| [WGAN-GP](Scripts_Generative#wgan-gp) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGANGP_pytorch.ipynb)  | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_mnist_pytorch.py) | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_cifar10_pytorch.py) |2017 |
 
