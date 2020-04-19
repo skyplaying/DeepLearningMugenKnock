@@ -183,14 +183,12 @@ $ pip install matplotlib opencv-python easydict chainer
 ### [VAE](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
 |:---:|:---:|:---:|
-| [AutoEncoder](Scripts_Generative#q-auto-encoder) Cifar10 |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/ae_cifar10_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/ae_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/ae_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/ae_cifar10_chainer.py) |
-| [AutoEncoder](Scripts_Generative#q-auto-encoder) |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/ae_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/ae_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/ae_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/ae_chainer.py) |
-| [Convolutional AutoEncoder](Scripts_Generative#q-convolutional-auto-encoder) Cifar10 |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/convae_cifar10_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/convae_cifar10_tensorflow_slim.py)[&check; keras](Scripts_Generative/scripts_keras/convae_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/convae_cifar10_chainer.py) |
-| [Convolutional AutoEncoder](Scripts_Generative#q-convolutional-auto-encoder) |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/convae_pytorch.py) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/convae_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/convae_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/convae_chainer.py) |
-| [VAE (Variational AutoEncoder)](Scripts_Generative#vae) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_mnist_pytorch.py) |
-| [VAE 潜在変数の可視化](Scripts_Generative#vae-潜在変数の可視化) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_latest_show_mnist_pytorch.py) |
-| [VAE 潜在変数の操作による画像の生成1](Scripts_Generative#vae-潜在変数の操作による画像の生成) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_latent_change_mnist_pytorch.py) |
-| [VAE 潜在変数の操作による画像の生成2](Scripts_Generative#vae-潜在変数の操作による画像の生成) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/vae_latent_change2_mnist_pytorch.py) |
+| [AutoEncoder](Scripts_Generative#q-auto-encoder) mnist |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/AE_mnist_pytorch.ipynb) |
+| [AutoEncoder](Scripts_Generative#q-auto-encoder) cifar10 |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/AE_cifar10_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/ae_cifar10_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/ae_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/ae_cifar10_chainer.py) |
+| [AutoEncoder](Scripts_Generative#q-auto-encoder) |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/AE_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/ae_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/ae_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/ae_chainer.py) |
+| [Convolutional AutoEncoder](Scripts_Generative#q-convolutional-auto-encoder) cifar10 |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/ConvAE_cifar10_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/convae_cifar10_tensorflow_slim.py)[&check; keras](Scripts_Generative/scripts_keras/convae_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/convae_cifar10_chainer.py) |
+| [Convolutional AutoEncoder](Scripts_Generative#q-convolutional-auto-encoder) |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/ConvAE_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/convae_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/convae_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/convae_chainer.py) |
+| [VAE (Variational AutoEncoder)](Scripts_Generative#vae) MNIST |  [&check; pytorch](Scripts_Segmentation/scripts_pytorch/VAE_mnist_pytorch.ipynb) |
 
 ### [GAN](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
