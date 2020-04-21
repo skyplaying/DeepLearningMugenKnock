@@ -190,6 +190,7 @@ $ pip install matplotlib opencv-python easydict chainer
 | [Convolutional AutoEncoder](Scripts_Generative#q-convolutional-auto-encoder) cifar10 |  [&check; pytorch](Scripts_Generative/scripts_pytorch/ConvAE_cifar10_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/convae_cifar10_tensorflow_slim.py)[&check; keras](Scripts_Generative/scripts_keras/convae_cifar10_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/convae_cifar10_chainer.py) |
 | [Convolutional AutoEncoder](Scripts_Generative#q-convolutional-auto-encoder) |  [&check; pytorch](Scripts_Generative/scripts_pytorch/ConvAE_pytorch.ipynb) [&check; tf.slim](Scripts_Generative/scripts_tf_slim/convae_tensorflow_slim.py) [&check; keras](Scripts_Generative/scripts_keras/convae_keras.py) [&check; chainer](Scripts_Generative/scripts_chainer/convae_chainer.py) |
 | [VAE (Variational AutoEncoder)](Scripts_Generative#vae) MNIST |  [&check; pytorch](Scripts_Generative/scripts_pytorch/VAE_mnist_pytorch.ipynb) |
+| VAE + Clustering MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/VAE_clustering_mnist_pytorch.ipynb) 
 
 ### [GAN](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
