@@ -106,7 +106,7 @@ $ git clone https://github.com/yoyoyo-yo/DeepLearningMugenKnock.git
 
 ```bash
 # pytorch
-$ pip install matplotlib opencv-python easydict torch torchvision
+$ pip install matplotlib opencv-python easydict torch torchvision torchsummary
 # tensorflow-2.1
 $ pip install matplotlib opencv-python easydict tensorflow==2.1
 # keras
