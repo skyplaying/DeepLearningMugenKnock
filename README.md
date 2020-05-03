@@ -32,6 +32,7 @@ Twitterで更新を発信してますぅ
 
 https://twitter.com/curry_frog
 
+- 2020.5.3 Sun [pytorch] CycleGANを追加
 - 2020.4.3 Fri [tf.keras] pix2pixを追加
 - 2020.3.27 Thu [tf.keras] Style Transferを追加
 - 2020.2.25 Tue [Pytorch] WGAN-GPを修正
@@ -209,6 +210,7 @@ $ pip install matplotlib opencv-python easydict chainer
 | [WGAN-GP](Scripts_Generative#wgan-gp) | [&check; pytorch](Scripts_Generative/scripts_pytorch/WGANGP_pytorch.ipynb)  | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) MNIST | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_mnist_pytorch.py) | 2017 |
 | [alpha-GAN](Scripts_Generative#alpha-gan) cifar10 | [&check; pytorch](Scripts_Generative/scripts_pytorch/alphaGAN_cifar10_pytorch.py) |2017 |
+| CycleGAN | [&check; pytorch](Scripts_Generative/scripts_pytorch/CycleGAN_pytorch.ipynb) 
 
 ### [Generative Model](Scripts_Generative)
 | 問題 |  Implementation | Published Year |
