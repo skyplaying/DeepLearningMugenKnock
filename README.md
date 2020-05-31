@@ -43,7 +43,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 |:---:|:---:|
 | VGG16| [pytorch](pytorch/VGG16_CIFAR100_pytorch.ipynb)
 | VGG19 | [pytorch](pytorch/VGG19_CIFAR100_pytorch.ipynb)
-| [GoogLeNet-v1 (Inception)](Scripts_Model#q-googlenet-v1) | [ pytorch](Scripts_Model/pytorch/googletnetv1_pytorch.py) 
+| GoogLeNet-v1 | [ pytorch](Spytorch/googletnetv1_pytorch.py) 
 | ResNet-50, 101, 152, 18, 34 | [ pytorch](pytorch/ResNet_CIFAR100_pytorch.ipynb) 
 | ResNeXt-50,101 | [ pytorch](pytorch/ResNeXt_CIFAR100_pytorch.ipynb)
 | Xception| [ pytorch](pytorch/Xception_CIFAR100_pytorch.ipynb) 
@@ -56,7 +56,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 
 | Method |  Code |
 |:---:|:---:|
-| [Grad-CAM](Scripts_Interpret#grad-cam) | [ pytorch](Scripts_Interpret/scripts_interpret/GradCam_pytorch.py)
+| Grad-CAM | [ pytorch](scripts/GradCAM_STL10_pytorch.ipynb)
 
 
 ### Segmentation
