@@ -37,6 +37,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 
 | API | Code |
 |:---:|:---:|
+| torchvision.models | [pytorch STL10](scripts/api_pytorch.ipynb)
 | torchvision.models(VGG16) | [pytorch CIFAR100](pytorch/VGG16_ft_CIFAR100_pytorch.ipynb)
 
 | Method | Code |
@@ -50,13 +51,13 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 | DenseNet121, 169, 201, 264| [ pytorch](pytorch/DenseNet_CIFAR100_pytorch.ipynb) 
 | MobileNet-v1 | [ pytorch](pytorch/MobileNetv1_pytorch.py)
 | MobileNet-v2 | [ pytorch](pytorch/MobileNetv2_CIFAR100_pytorch.ipynb)
-| EfficientNetB0 | [ pytorch](pytorch/EfficientNet_CIFAR10_pytorch.ipynb)
+| EfficientNet | [ pytorch](pytorch/EfficientNet_CIFAR10_pytorch.ipynb)
 
 ###  Interpretation
 
 | Method |  Code |
 |:---:|:---:|
-| Grad-CAM | [ pytorch](scripts/GradCAM_STL10_pytorch.ipynb)
+| Grad-CAM | [ pytorch](pytorch/GradCAM_STL10_pytorch.ipynb)
 
 
 ### Segmentation
