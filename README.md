@@ -1,4 +1,4 @@
-# ディープラーニング∞本ノックぅぅ!!
+# ディープラーニング∞CheatSheet!!
 
 DeepLearningの実装Tips (WiP)
 
