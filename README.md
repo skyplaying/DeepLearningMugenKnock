@@ -106,9 +106,9 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 ### NLP
 | Method | Code | 
 |:---:|:---:|
-| seq2seq | [ pytorch](pytorch/Seq2seq_pytorch.py)
-| Transformer | [ pytorch](pytorch/Transformer_pytorch.py)
-| HRED | [ pytorch](Scripts_NLP/pytorch/HRED_pytorch.py) 
+| seq2seq | [ pytorch](pytorch/Seq2seq_pytorch.ipynb)
+| Transformer | [ pytorch](pytorch/Transformer_pytorch.ipynb)
+| HRED | [ pytorch](pytorch/HRED_pytorch_sand.ipynb) 
 | Word2Vec (Skip-gram)| [ pytorch](Scripts_NLP/pytorch/word2vec_pytorch.py) |
 
 ## Update
