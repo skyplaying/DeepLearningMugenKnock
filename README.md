@@ -51,7 +51,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 | DenseNet121, 169, 201, 264| [ pytorch](pytorch/DenseNet_CIFAR100_pytorch.ipynb) 
 | MobileNet-v1 | [ pytorch](pytorch/MobileNetv1_pytorch.ipynb)
 | MobileNet-v2 | [ pytorch](pytorch/MobileNetv2_CIFAR100_pytorch.ipynb)
-| EfficientNet | [ pytorch](pytorch/EfficientNet_CIFAR10_pytorch.ipynb)
+| EfficientNet | [ pytorch](pytorch/EfficientNet_CIFAR100_pytorch.ipynb)
 
 ###  Interpretation
 
@@ -109,7 +109,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 | seq2seq | [ pytorch](pytorch/Seq2seq_pytorch.ipynb)
 | Transformer | [ pytorch](pytorch/Transformer_pytorch.ipynb)
 | HRED | [ pytorch](pytorch/HRED_pytorch_sand.ipynb) 
-| Word2Vec (Skip-gram)| [ pytorch](Scripts_NLP/pytorch/word2vec_pytorch.py) |
+| Word2Vec (Skip-gram)| [ pytorch](pytorch/Word2vec_pytorch.ipynb) |
 
 ## Update
 
