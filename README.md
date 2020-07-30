@@ -66,8 +66,14 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 |:---:|:---:|
 | UNet|  [pytorch](pytorch/UNet_Seg_VOC2012_pytorch.ipynb) 
 
+### Object Detection
 
-### [AE](Scripts_Generative)
+| Method | Code |
+|:---:|:---:|
+| MaskRCNN (torchvision)| [pytorch](pytorch/MaskRCNN_torchvision_sample.ipynb) 
+
+
+### AE
 | Method | Code |
 |:---:|:---:|
 | AE MNIST |  [ pytorch](pytorch/AE_MNIST_pytorch.ipynb)
@@ -100,7 +106,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 ### Other
 | Method | Code |
 |:---:|:---:|
-| Style Transfer|  [ tf.keras](scripts_tf_keras/StyleTransfer_tf2.1_keras.py) |
+| Style Transfer|  [tf.keras](tf/StyleTransfer_tf2.1_keras.py) |
 
 
 ### NLP
