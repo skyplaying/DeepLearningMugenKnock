@@ -1,3 +1,6 @@
+
+<img src="icons/dlknock_icon_bg.png" width=300>
+
 # ディープラーニング∞CheatSheet!!
 
 DeepLearningの実装Tips (WiP)
