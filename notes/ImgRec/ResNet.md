@@ -4,9 +4,11 @@
 
 skip connectionにより152層までの学習を可能にした
 
-<img src="images/resnet.png" height=200>
+<img src="images/resnet_block.png" height=200>
 
 18, 34, 50, 101, 152層がある
+
+<img src="images/resnet_module.png" height=400>
 
 
 ## pytorch torchvision
