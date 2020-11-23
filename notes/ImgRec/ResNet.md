@@ -17,9 +17,9 @@ skip connectionにより152層までの学習を可能にした
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torchvision
+from torchvision import models
 
-def get_model(self, out_dim, dropout=0.5):
+def get_model(out_dim, dropout=0.5):
     model = models.resnet50(pretrained=True)
     del model.fc
     
@@ -37,7 +37,7 @@ def get_model(self, out_dim, dropout=0.5):
 
 ## pytorch scratch
 
-# ResNet50
+### ResNet50
 
 ```python
 import torch
@@ -87,7 +87,7 @@ class ResNet50(torch.nn.Module):
                 return x
 
         self.module = nn.Sequential(
-            nn.Conv2d(cfg.INPUT_CHANNEL, 64, kernel_size=7, padding=3, stride=2),
+            nn.Conv2d(3, 64, kernel_size=7, padding=3, stride=2),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d([3, 3], padding=1, stride=2),
@@ -125,7 +125,7 @@ class ResNet50(torch.nn.Module):
         return x
 ```
 
-## ResNet18
+### ResNet18
 
 ```python
 class ResNet18(torch.nn.Module):
@@ -166,7 +166,7 @@ class ResNet18(torch.nn.Module):
                 return x
 
         self.module = nn.Sequential(
-            nn.Conv2d(cfg.INPUT_CHANNEL, 64, kernel_size=7, padding=3, stride=2),
+            nn.Conv2d(3, 64, kernel_size=7, padding=3, stride=2),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d([3, 3], padding=1, stride=2),
@@ -194,7 +194,7 @@ class ResNet18(torch.nn.Module):
         return x
 ```
 
-## ResNet34
+### ResNet34
 
 ```python
 class ResNet34(torch.nn.Module):
@@ -234,7 +234,7 @@ class ResNet34(torch.nn.Module):
                 return x
 
         self.module = nn.Sequential(
-            nn.Conv2d(cfg.INPUT_CHANNEL, 64, kernel_size=7, padding=3, stride=2),
+            nn.Conv2d(3, 64, kernel_size=7, padding=3, stride=2),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d([3, 3], padding=1, stride=2),
@@ -270,7 +270,7 @@ class ResNet34(torch.nn.Module):
         return x
 ```
 
-## ResNet101
+### ResNet101
 
 ```python
 class ResNet101(torch.nn.Module):
@@ -322,7 +322,7 @@ class ResNet101(torch.nn.Module):
         resblock4s = torch.nn.Sequential(*block)
 
         self.module = nn.Sequential(
-            nn.Conv2d(cfg.INPUT_CHANNEL, 64, kernel_size=7, padding=3, stride=2),
+            nn.Conv2d(3, 64, kernel_size=7, padding=3, stride=2),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d([3, 3], padding=1, stride=2),
@@ -354,7 +354,7 @@ class ResNet101(torch.nn.Module):
         return x
 ```
 
-## ResNet152
+### ResNet152
 
 ```python
 class ResNet152(torch.nn.Module):
@@ -411,7 +411,7 @@ class ResNet152(torch.nn.Module):
         resblock4s = torch.nn.Sequential(*block)
 
         self.module = nn.Sequential(
-            nn.Conv2d(cfg.INPUT_CHANNEL, 64, kernel_size=7, padding=3, stride=2),
+            nn.Conv2d(3, 64, kernel_size=7, padding=3, stride=2),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d([3, 3], padding=1, stride=2),

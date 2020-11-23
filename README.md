@@ -49,7 +49,7 @@ $ pip install matplotlib opencv-python easydict tensorflow==2.1
 | VGG19 | [pytorch](pytorch/VGG19_CIFAR100_pytorch.ipynb)
 | GoogLeNet-v1 | [ pytorch](Spytorch/googletnetv1_pytorch.ipynb) 
 | ResNet-50, 101, 152, 18, 34 | [ pytorch](notes/ImgRec/ResNet.md) 
-| ResNeXt-50,101 | [ pytorch](pytorch/ResNeXt_CIFAR100_pytorch.ipynb)
+| ResNeXt-50,101 | [ pytorch](notes/ImgRec/ResNeXt.md)
 | Xception| [ pytorch](pytorch/Xception_CIFAR100_pytorch.ipynb) 
 | DenseNet121, 169, 201, 264| [ pytorch](pytorch/DenseNet_CIFAR100_pytorch.ipynb) 
 | MobileNet-v1 | [ pytorch](pytorch/MobileNetv1_pytorch.ipynb)
