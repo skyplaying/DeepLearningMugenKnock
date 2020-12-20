@@ -25,31 +25,21 @@ DeepLearningの実装Tips (WiP)
 - ***画像処理100本ノック!! https://github.com/yoyoyo-yo/Gasyori100knock)***
 
 
-## Install package
-
-```bash
-# pytorch
-$ pip install matplotlib opencv-python easydict torch torchvision torchsummary
-# tensorflow-2.1
-$ pip install matplotlib opencv-python easydict tensorflow==2.1
-```
-
-
-## Tips
+## Codes
 
 ### Model
 
 | Method | Code |
 |:---:|:---:|
-| VGG 16, 19| [ pytorch](notes_pytorch/ImgRec/VGG_cifar10_pytorch.ipynb) 
-| GoogLeNet-v1 | [ pytorch](pytorch/googletnetv1_pytorch.ipynb) 
-| ResNet-50, 101, 152, 18, 34 | [ pytorch](notes_pytorch/ImgRec/ResNet_cifar10_pytorch.ipynb) 
-| ResNeXt-50,101 | [ pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb)
-| Xception| [ pytorch](notes_pytorch/ImgRec/Xception_cifar10_pytorch.ipynb) 
-| DenseNet121, 169, 201, 264| [ pytorch](pytorch/DenseNet_CIFAR100_pytorch.ipynb) 
-| MobileNet-v1 | [ pytorch](pytorch/MobileNetv1_pytorch.ipynb)
-| MobileNet-v2 | [ pytorch](pytorch/MobileNetv2_CIFAR100_pytorch.ipynb)
-| EfficientNet | [ pytorch](pytorch/EfficientNet_CIFAR100_pytorch.ipynb)
+| VGG 16, 19| [pytorch](notes_pytorch/ImgRec/VGG_cifar10_pytorch.ipynb) 
+| GoogLeNet-v1 | [pytorch](pytorch/googletnetv1_pytorch.ipynb) 
+| ResNet-50, 101, 152, 18, 34 | [pytorch](notes_pytorch/ImgRec/ResNet_cifar10_pytorch.ipynb) 
+| ResNeXt-50,101 | [pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb)
+| Xception| [pytorch](notes_pytorch/ImgRec/Xception_cifar10_pytorch.ipynb) 
+| DenseNet121, 169, 201, 264| [pytorch](notes_pytorch/ImgRec/DenseNet_cifar10_pytorch.ipynb) 
+| MobileNet-v1 | [pytorch](pytorch/MobileNetv1_pytorch.ipynb)
+| MobileNet-v2 | [pytorch](pytorch/MobileNetv2_CIFAR100_pytorch.ipynb)
+| EfficientNet | [pytorch](pytorch/EfficientNet_CIFAR100_pytorch.ipynb)
 
 ###  Interpretation
 
