@@ -37,8 +37,8 @@ DeepLearningの実装Tips (WiP)
 | ResNeXt-50,101 | [pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb)
 | Xception| [pytorch](notes_pytorch/ImgRec/Xception_cifar10_pytorch.ipynb) 
 | DenseNet121, 169, 201, 264| [pytorch](notes_pytorch/ImgRec/DenseNet_cifar10_pytorch.ipynb) 
-| MobileNet-v1 | [pytorch](pytorch/MobileNetv1_pytorch.ipynb)
-| MobileNet-v2 | [pytorch](pytorch/MobileNetv2_CIFAR100_pytorch.ipynb)
+| MobileNet-v1 | [pytorch](notes_pytorch/ImgRec/MobileNet_v1_cifar10_pytorch.ipynb)
+| MobileNet-v2 | [pytorch](notes_pytorch/ImgRec/MobileNet_v2_cifar10_pytorch.ipynb)
 | EfficientNet | [pytorch](pytorch/EfficientNet_CIFAR100_pytorch.ipynb)
 
 ###  Interpretation
@@ -64,14 +64,9 @@ DeepLearningの実装Tips (WiP)
 ### AE
 | Method | Code |
 |:---:|:---:|
-| AE MNIST |  [ pytorch](pytorch/AE_MNIST_pytorch.ipynb)
-| AE cifar10 |  [ pytorch](pytorch/AE_CIFAR10_pytorch.ipynb)
-| AE |  [ pytorch](pytorch/AE_pytorch.ipynb) 
-| AEによる異常検知 | [ (MNIST)pytorch](pytorch/AE_AnormalyDet_MNIST_pytorch.ipynb), [(FashionMNIST) pytorch](pytorch/AE_AnormalyDetection_fashionmnist_pytorch.ipynb)
-| ConvAE cifar10 |  [ pytorch](pytorch/ConvAE_CIFAR10_pytorch.ipynb) 
-| ConvAE |  [ pytorch](pytorch/ConvAE_pytorch.ipynb)
-| VAE MNIST |  [ pytorch](pytorch/VAE_MNIST_pytorch.ipynb)
-| VAE + Clustering MNIST | [ pytorch](pytorch/VAE_Clustering_MNIST_pytorch.ipynb) 
+| AE |  [pytorch](notes_pytorch/AE/AE_MNIST_pytorch.ipynb)
+| AEによる異常検知 | [pytorch](notes_pytorch/AE/AE_AnormalyDetection_MNIST_pytorch.ipynb)
+| VAE (+ clustering)|  [pytorch](notes_pytorch/AE/VAE_MNIST_pytorch.ipynb)
 
 ### GAN
 | Method | Code | 
@@ -105,11 +100,6 @@ DeepLearningの実装Tips (WiP)
 | HRED | [ pytorch](pytorch/HRED_pytorch_sand.ipynb) 
 | Word2Vec (Skip-gram)| [ pytorch](pytorch/Word2vec_pytorch.ipynb) |
 
-## Update
-
-Twitterで更新を発信してますぅ
-
-https://twitter.com/curry_frog
 
 - 2020.5.3 Sun [pytorch] CycleGANを追加
 - 2020.4.3 Fri [tf.keras] pix2pixを追加
