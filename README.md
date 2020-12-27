@@ -71,10 +71,8 @@ DeepLearningの実装Tips (WiP)
 ### GAN
 | Method | Code | 
 |:---:|:---:|
-| GAN cifar10 | [ pytorch](pytorch/gan_cifar10_pytorch.py) 
-| GAN | [ pytorch](pytorch/gan_pytorch.py) 
-| DCGAN cifar10 | [ pytorch](pytorch/DCGAN_CIFAR10_pytorch.ipynb) 
-| DCGAN | [ pytorch](pytorch/DCGAN_pytorch.ipynb)
+| GAN | [pytorch](notes_pytorch/GAN/GAN_Cifar10_pytorch.ipynb) 
+| DCGAN | [pytorch](notes_pytorch/GAN/DCGAN_Cifar10_pytorch.ipynb) 
 | CGAN MNIST | [ pytorch](pytorch/CGAN_MNIST_pytorch.ipynb)
 | CGAN CIFAR10 | [ pytorch](pytorch/CGAN_CIFAR10_pytorch.ipynb)
 | pix2pix Seg | [ pytorch](pytorch/Pix2pix_Seg_pytorch.ipynb) [ tf.keras](scripts_tf_keras/pix2pix_tf2.1_keras.py)
