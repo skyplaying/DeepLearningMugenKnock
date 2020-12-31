@@ -39,7 +39,7 @@ DeepLearningの実装Tips (WiP)
 | DenseNet121, 169, 201, 264| [pytorch](notes_pytorch/ImgRec/DenseNet_cifar10_pytorch.ipynb) 
 | MobileNet-v1 | [pytorch](notes_pytorch/ImgRec/MobileNet_v1_cifar10_pytorch.ipynb)
 | MobileNet-v2 | [pytorch](notes_pytorch/ImgRec/MobileNet_v2_cifar10_pytorch.ipynb)
-| EfficientNet | [pytorch](pytorch/EfficientNet_CIFAR100_pytorch.ipynb)
+| EfficientNet | [pytorch](notes_pytorch/ImgRec/EfficientNet_cifar10_pytorch.ipynb)
 
 ###  Interpretation
 
