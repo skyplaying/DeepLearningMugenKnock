@@ -45,7 +45,7 @@ DeepLearningの実装Tips (WiP)
 
 | Method |  Code |
 |:---:|:---:|
-| Grad-CAM | [ pytorch](pytorch/GradCAM_STL10_pytorch.ipynb)
+| Grad-CAM | [pytorch](notes_pytorch/Interpretation/GradCAM_STL10_pytorch.ipynb)
 
 
 ### Segmentation
