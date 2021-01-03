@@ -52,7 +52,7 @@ DeepLearningの実装Tips (WiP)
 
 | Method | Code |
 |:---:|:---:|
-| UNet|  [pytorch](pytorch/UNet_Seg_VOC2012_pytorch.ipynb) 
+| U-Net|  [pytorch](notes_pytorch/ImgSeg/UNet_VOC2012_pytorch.ipynb) 
 
 ### Object Detection
 
