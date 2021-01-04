@@ -1,7 +1,7 @@
 
 <img src="icons/dlknock_icon.png" width=300>
 
-# ディープラーニング∞CheatSheet!!
+# ディープラーニング∞CheatSheet
 
 DeepLearningの実装Tips (WiP)
 
@@ -12,10 +12,6 @@ DeepLearningの実装Tips (WiP)
 
 
 もしこれがみなさんのお役に立ったらGithub Sponsorになってください！
-
-~~何問になるか分からないので∞本になってます。多分これからいろんな技術が出るからどんどん更新する予定でっす。これはイモリと一緒にディープラーニングの基礎からDLのライブラリの扱い、どういうDLの論文があったかを実装しながら学んでいくための問題集です。本とか論文読んだだけじゃ机上の空想でしかないので、ネットワークの作成や学習率などのハイパーパラメータの設定を自分の手を動かしながら勉強するための問題集です。~~
-
-~~**問題集として使ってもテンプレやチートシートとして使っても使い方は自由です！！！！**~~
 
 ## Related
 
@@ -33,12 +29,13 @@ DeepLearningの実装Tips (WiP)
 |:---:|:---:|
 | VGG 16, 19| [pytorch](notes_pytorch/ImgRec/VGG_cifar10_pytorch.ipynb) 
 | GoogLeNet-v1 | [pytorch](pytorch/googletnetv1_pytorch.ipynb) 
-| ResNet-50, 101, 152, 18, 34 | [pytorch](notes_pytorch/ImgRec/ResNet_cifar10_pytorch.ipynb) 
-| ResNeXt-50,101 | [pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb)
+| ResNet | [pytorch](notes_pytorch/ImgRec/ResNet_cifar10_pytorch.ipynb) 
+| ResNeXt | [pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb)
 | Xception| [pytorch](notes_pytorch/ImgRec/Xception_cifar10_pytorch.ipynb) 
 | DenseNet121, 169, 201, 264| [pytorch](notes_pytorch/ImgRec/DenseNet_cifar10_pytorch.ipynb) 
 | MobileNet-v1 | [pytorch](notes_pytorch/ImgRec/MobileNet_v1_cifar10_pytorch.ipynb)
 | MobileNet-v2 | [pytorch](notes_pytorch/ImgRec/MobileNet_v2_cifar10_pytorch.ipynb)
+| SEResNeXt | [pytorch](notes_pytorch/ImgRec/SEResNeXt_cifar10_pytorch.ipynb)
 | EfficientNet | [pytorch](notes_pytorch/ImgRec/EfficientNet_cifar10_pytorch.ipynb)
 
 ###  Interpretation
