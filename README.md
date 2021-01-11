@@ -25,18 +25,18 @@ DeepLearningの実装Tips (WiP)
 
 ### Model
 
-| Method | Code |
-|:---:|:---:|
-| VGG 16, 19| [pytorch](notes_pytorch/ImgRec/VGG_cifar10_pytorch.ipynb) 
+| Method | Code | |
+|:---:|:---:|:---:|
+| VGG 16, 19| [pytorch](notes_pytorch/ImgRec/VGG_cifar10_pytorch.ipynb)  | 2014
 | GoogLeNet-v1 | [pytorch](pytorch/googletnetv1_pytorch.ipynb) 
-| ResNet | [pytorch](notes_pytorch/ImgRec/ResNet_cifar10_pytorch.ipynb) 
-| ResNeXt | [pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb)
-| Xception| [pytorch](notes_pytorch/ImgRec/Xception_cifar10_pytorch.ipynb) 
-| DenseNet121, 169, 201, 264| [pytorch](notes_pytorch/ImgRec/DenseNet_cifar10_pytorch.ipynb) 
-| MobileNet-v1 | [pytorch](notes_pytorch/ImgRec/MobileNet_v1_cifar10_pytorch.ipynb)
-| MobileNet-v2 | [pytorch](notes_pytorch/ImgRec/MobileNet_v2_cifar10_pytorch.ipynb)
-| SEResNeXt | [pytorch](notes_pytorch/ImgRec/SEResNeXt_cifar10_pytorch.ipynb)
-| EfficientNet | [pytorch](notes_pytorch/ImgRec/EfficientNet_cifar10_pytorch.ipynb)
+| ResNet | [pytorch](notes_pytorch/ImgRec/ResNet_cifar10_pytorch.ipynb) | 2015
+| ResNeXt | [pytorch](notes_pytorch/ImgRec/ResNeXt_cifar10_pytorch.ipynb) | 2016
+| Xception| [pytorch](notes_pytorch/ImgRec/Xception_cifar10_pytorch.ipynb)  | 2016
+| DenseNet121, 169, 201, 264| [pytorch](notes_pytorch/ImgRec/DenseNet_cifar10_pytorch.ipynb) | 2016
+| MobileNet-v1 | [pytorch](notes_pytorch/ImgRec/MobileNet_v1_cifar10_pytorch.ipynb) | 2017
+| SEResNeXt | [pytorch](notes_pytorch/ImgRec/SEResNeXt_cifar10_pytorch.ipynb) | 2017 
+| MobileNet-v2 | [pytorch](notes_pytorch/ImgRec/MobileNet_v2_cifar10_pytorch.ipynb) | 2018
+| EfficientNet | [pytorch](notes_pytorch/ImgRec/EfficientNet_cifar10_pytorch.ipynb) | 2019
 
 ###  Interpretation
 
@@ -47,9 +47,9 @@ DeepLearningの実装Tips (WiP)
 
 ### Segmentation
 
-| Method | Code |
-|:---:|:---:|
-| U-Net|  [pytorch](notes_pytorch/ImgSeg/UNet_VOC2012_pytorch.ipynb) 
+| Method | Code | |
+|:---:|:---:|:---:|
+| U-Net|  [pytorch](notes_pytorch/ImgSeg/UNet_VOC2012_pytorch.ipynb) | 2015
 
 ### Object Detection
 
