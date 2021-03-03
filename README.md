@@ -1,5 +1,5 @@
 
-<img src="icons/dlknock_icon.png" width=300>
+<img src="icons/dl_icon_trans.png" width=300>
 
 # ディープラーニング∞CheatSheet
 
