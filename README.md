@@ -3,7 +3,7 @@
 
 # ディープラーニング∞CheatSheet
 
-DeepLearningの実装Tips (WiP)
+DeepLearningの実装Tips (WiP) **たぶんしばらくモチベないので更新しません**
 
 **ノック作るのが大変になってきたのでTips集に変更しました**
 
