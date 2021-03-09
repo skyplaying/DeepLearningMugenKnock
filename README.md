@@ -11,11 +11,9 @@ DeepLearningの実装Tips (WiP) **たぶんしばらくモチベないので更�
 - あくまで個人の趣味で作成しているものです　**PRは受け付けてますが、実装の依頼などは一切受け付けていませんので、そこをご理解頂けた方のみご利用下さい**
 
 
-もしこれがみなさんのお役に立ったらGithub Sponsorになってください！
-
 ## Related
 
-- ***Study-AI株式会社様 http://kentei.ai/ のAI実装検定のシラバスに使用していただくことになりました！(画像処理100本ノックも）Study-AI株式会社様ではAIスキルを学ぶためのコンテンツを作成されており、AIを学ぶ上でとても参考になります！
+- ***Study-AI株式会社様 http://kentei.ai/ のAI実装検定のシラバスに使用していただくことになりました！(画像処理100本ノックも）Study-AI株式会社様ではAIスキルを学ぶためのコンテンツを作成されています！
 検定も実施されてるので、興味ある方はぜひ受けることをお勧めします！***
 
 - ***画像処理100本ノック!! https://github.com/yoyoyo-yo/Gasyori100knock)***
@@ -152,6 +150,6 @@ DeepLearningの実装Tips (WiP) **たぶんしばらくモチベないので更�
 
 ## License
 
-&copy; Curry yoshi All Rights Reserved.
+&copy; tired imori All Rights Reserved.
 
 This is under MIT License.
