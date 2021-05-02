@@ -41,12 +41,6 @@
 |:---:|:---:|:---:|
 | U-Net|  [pytorch](notes_pytorch/ImgSeg/UNet_VOC2012_pytorch.ipynb) | 2015
 
-### Object Detection
-
-| Method | Code |
-|:---:|:---:|
-| MaskRCNN (torchvision)| [pytorch](pytorch/MaskRCNN_torchvision_sample.ipynb) 
-
 
 ### AE
 | Method | Code |
@@ -61,17 +55,12 @@
 | GAN | [pytorch](notes_pytorch/GAN/GAN_Cifar10_pytorch.ipynb) 
 | DCGAN | [pytorch](notes_pytorch/GAN/DCGAN_Cifar10_pytorch.ipynb) 
 | CGAN | [pytorch](notes_pytorch/GAN/CGAN_pytorch.ipynb) 
-| pix2pix Seg | [ pytorch](pytorch/Pix2pix_Seg_pytorch.ipynb) [ tf.keras](scripts_tf_keras/pix2pix_tf2.1_keras.py)
+| pix2pix Seg | [ pytorch](pytorch/Pix2pix_Seg_pytorch.ipynb)
 | WGAN | [pytorch](notes_pytorch/GAN/WGAN_Cifar10_pytorch.ipynb)
 | WGAN-GP | [pytorch](notes_pytorch/GAN/WGANGP_Cifar10_pytorch.ipynb) 
 | alphaGAN MNIST | [ pytorch](pytorch/alphaGAN_mnist_pytorch.py)
 | alphaGAN cifar10 | [ pytorch](pytorch/alphaGAN_cifar10_pytorch.py)
 | CycleGAN | [ pytorch](pytorch/CycleGAN_pytorch.ipynb) 
-
-### Other
-| Method | Code |
-|:---:|:---:|
-| Style Transfer|  [tf.keras](tf/StyleTransfer_tf2.1_keras.py) |
 
 
 ### NLP
