@@ -85,9 +85,4 @@
 
 ## License
 
-<<<<<<< HEAD
-=======
-&copy; tired imori All Rights Reserved.
-
->>>>>>> 4ba63dc85e49600599f3d04850489e96a8970e72
 This is under MIT License.
