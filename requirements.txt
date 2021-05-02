@@ -1,9 +1,0 @@
-numpy
-matplotlib
-opencv-python
-easydict
-tensorflow
-keras
-torch
-torchvision
-chainer
