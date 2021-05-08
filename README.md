@@ -1,9 +1,9 @@
 
 <img src="icons/icon.png" width=300>
 
-# DeepLearningSheet
+# Data Sciense Codes
 
-ディープラーニングのモデルの中身理解のためのコード集(ほぼ自分の勉強用)
+データサイエンス系のモデルの中身理解のためのコード集(ほぼ自分の勉強用)
 
 - 【注意】このページを利用して、または関して生じた事に関しては、**私は一切責任を負いません。** すべて **自己責任** でお願い致します。
 - あくまで個人の趣味で作成しているものです　**PRは受け付けてますが、実装の依頼などは一切受け付けていませんので、そこをご理解頂けた方のみご利用下さい**
@@ -27,12 +27,6 @@
 | SEResNeXt | [pytorch](notes_pytorch/ImgRec/SEResNeXt_cifar10_pytorch.ipynb) | 2017 
 | MobileNet-v2 | [pytorch](notes_pytorch/ImgRec/MobileNet_v2_cifar10_pytorch.ipynb) | 2018
 | EfficientNet | [pytorch](notes_pytorch/ImgRec/EfficientNet_cifar10_pytorch.ipynb) | 2019
-
-###  Interpretation
-
-| Method |  Code | Reference
-|:---:|:---:|:---:|
-| Grad-CAM | [pytorch](notes_pytorch/Interpretation/GradCAM_STL10_pytorch.ipynb) | https://github.com/kazuto1011/grad-cam-pytorch
 
 
 ### Segmentation
