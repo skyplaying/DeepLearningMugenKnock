@@ -1,6 +1,4 @@
 
-<img src="icons/icon.png" width=300>
-
 # Data Sciense Codes
 
 データサイエンス系のモデルの中身理解のためのコード集(ほぼ自分の勉強用)
